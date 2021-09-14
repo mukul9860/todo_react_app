@@ -105,6 +105,7 @@ const TodoList = () => {
                 onInputTextChange={inputChange}
                 onEnterClick={enterClick}
                 value={inputTextValue}
+                variant='primary'   
             />
 
             <TaskList

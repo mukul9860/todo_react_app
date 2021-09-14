@@ -26,7 +26,7 @@ const TaskList = (props) => {
 
           {/* Edit Section */}
             {item.isEdit && (
-            <>
+            <div className="row">
               <InputField
                 value={item.itemEditText}
                 onInputTextChange={(event) => {
@@ -37,15 +37,15 @@ const TaskList = (props) => {
               />
               <button 
                 onClick={() => props.onSubmitEditHandler(index)}
-                className="btn btn-success float-right"
+                className="btn btn-success ml-3"
               >
                 Save</button>
               <button
                 onClick={() => props.onCancelEditHandler(index)}
-                className="btn btn-danger"
+                className="btn btn-danger ml-3"
               >
                 Cancel</button>
-            </>
+            </div>
           )}
           {!item.isEdit && (
             <>
